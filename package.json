@@ -1,0 +1,23 @@
+{
+  "name": "thermostat",
+  "version": "1.0.0",
+  "description": "The goal of this challenge is to build a simple thermostat web application. Firstly I have written the business logic using javascript. I then hooked it up to a dynamic visual interface using jQuery - all within the browser. Finally, I fetched data from external sources and displayed them on the page - again, all using JS.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulinakoz/thermostat.git"
+  },
+  "author": "Paulina Kozaczek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulinakoz/thermostat/issues"
+  },
+  "homepage": "https://github.com/paulinakoz/thermostat#readme"
+}

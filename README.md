@@ -19,10 +19,14 @@ The goal of this challenge is to build a simple thermostat web application. Firs
 | Objects | Properties | Messages | Context | Output|
 | ----- | ----- | ------ | ----- |------ |
 | Thermostat | Int | | Starts at 20 | Int |
-|  | Int | Increase() |  Increases the temperature | Int |
-|  | Int | Decrease() |  Decreases the temperature | Int |
+|  | Int | up() |  Increases the temperature | temp(Int) |
+|  | Int | down() |  Decreases the temperature | temp(Int) |
 |  | | | Cant go lower than 10 | |
-|  | | powerSavingMode() | If on max temp is 25| |
+|  | | isPowerSaving() | If on max temp is 25| |
 |  | | | If off max temp is 32 | |
 |  | | | On by default | |
-|  | | Reset |  Resets temperature to 20 | |
+|  | | reset() |  Resets temperature to 20 | |
+|  | | | On by default | |
+|  | | usage() | If temp < 18 display green | |
+|  | | | If temp < 25 display yellow | |
+|  | | | Otherwise display red | |

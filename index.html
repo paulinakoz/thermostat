@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -8,12 +10,16 @@
   </head>
   <body>
     <p id="temp"></p>
-    <button type="button" id="up-button">UP</button>
-    <button type="button" id="down-button">DOWN</button>
-    <button type="button" id="reset-button">RESET</button>
+    <div id="buttons">
+      <button type="button" id="up-button">UP</button>
+      <button type="button" id="down-button">DOWN</button>
+      <button type="button" id="reset-button">RESET</button>
+    </div>
     <p id="isPSM"></p>
-    <button type="button" id="PSM-ON">PSM ON</button>
-    <button type="button" id="PSM-OFF">PSM OFF</button>
+    <div id="PSM-buttons">
+      <button type="button" id="PSM-ON">PSM ON</button>
+      <button type="button" id="PSM-OFF">PSM OFF</button>
+    </div>
   </body>
   <script type="module" src="jquery.js"></script>
 </html>

@@ -1,10 +1,10 @@
-import {Thermostat} from '../../src/thermostat';
+import {Thermostat} from '../../src/thermostat.js';
 
 let thermostat;
 
 describe('Thermostat', () => {
     beforeEach(() => {
-        thermostat = new Thermostat;
+        thermostat = new Thermostat();
     })
 
     describe('Testing up() method', () => {

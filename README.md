@@ -1,6 +1,6 @@
 # Thermostat
 
-The goal of this challenge is to build a simple thermostat web application. Firstly I have written the business logic using javascript. I then hooked it up to a dynamic visual interface using jQuery - all within the browser. Finally, I fetched data from external sources and displayed them on the page - again, all using JS.
+The goal of this challenge is to build a simple thermostat web application. Firstly I have written the business logic using javascript. I then hooked it up to a dynamic visual interface using jQuery - all within the browser. Finally, I fetched data from external sources and displayed them on the page.
 
 ## Specification
 
@@ -22,11 +22,10 @@ The goal of this challenge is to build a simple thermostat web application. Firs
 |  | Int | up() |  Increases the temperature | temp(Int) |
 |  | Int | down() |  Decreases the temperature | temp(Int) |
 |  | | | Cant go lower than 10 | |
-|  | | isPowerSaving() | If on max temp is 25| |
-|  | | | If off max temp is 32 | |
-|  | | | On by default | |
-|  | | reset() |  Resets temperature to 20 | |
-|  | | | On by default | |
-|  | | usage() | If temp < 18 display green | |
-|  | | | If temp < 25 display yellow | |
-|  | | | Otherwise display red | |
+|  | | isPowerSaving() | If on max temp is 25| True |
+|  | | | If off max temp is 32 | False |
+|  | | | On by default | True |
+|  | | reset() |  Resets temperature to 20 | Int |
+|  | | usage() | If temp < 18 display green | String|
+|  | | | If temp < 25 display yellow | String|
+|  | | | Otherwise display red | String|

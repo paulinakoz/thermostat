@@ -43,5 +43,13 @@ $(document).ready(function() {
         $("#isPSM").html('Power Saving Mode is OFF');
     })
     
+    // display initial temperature
     $("#temp").html(thermostat.temperature);
+
+    // make a request
+    $.get("http://api.openweathermap.org/data/2.5/weather?q=London&appid=d18f51b6e5317323f7fb7e0df337c72f")
+    .then(data => {
+        // update the html element with the data
+        $("#weather").html(`The temperature in London is ${Math.round(data.main.temp - 273.15)}ºC`)
+    })
 })

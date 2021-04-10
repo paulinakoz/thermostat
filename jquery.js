@@ -1,4 +1,5 @@
 import {Thermostat} from './src/thermostat.js';
+import {WeatherComponent} from './src/weather-component.js';
 
 $(document).ready(function() {
     const thermostat = new Thermostat();
@@ -29,16 +30,16 @@ $(document).ready(function() {
     })
 
     $("#PSM-ON").click(function() {
-        $("#PSM-OFF").css("color", "black")
-        $(this).css("color", "green")
+        $("#PSM-OFF").css("color", "black");
+        $(this).css("color", "green");
         thermostat.powerSavingMode = true;
         $("#temp").html(thermostat.reset());
         $("#isPSM").html('Power Saving Mode is ON');
     })
 
     $("#PSM-OFF").click(function() {
-        $("#PSM-ON").css("color", "black")
-        $(this).css("color", "green")
+        $("#PSM-ON").css("color", "black");
+        $(this).css("color", "green");
         thermostat.powerSavingMode = false;
         $("#isPSM").html('Power Saving Mode is OFF');
     })
@@ -46,10 +47,8 @@ $(document).ready(function() {
     // display initial temperature
     $("#temp").html(thermostat.temperature);
 
-    // make a request
-    $.get("http://api.openweathermap.org/data/2.5/weather?q=London&appid=d18f51b6e5317323f7fb7e0df337c72f")
-    .then(data => {
-        // update the html element with the data
-        $("#weather").html(`The temperature in London is ${Math.round(data.main.temp - 273.15)}ºC`)
+    $("#search").click(function() {
+        new WeatherComponent($("#weather"), $('#search-bar').val());
     })
+
 })
